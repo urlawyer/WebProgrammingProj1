@@ -92,6 +92,6 @@ body {
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid black;
-    width: 14ch; /* adjust this based on the length of your text */
+    width: 14ch; 
     animation: typewriter 4s steps(24) 0s 1 normal both, blinkTextCursor 500ms steps(24) infinite;
 }
