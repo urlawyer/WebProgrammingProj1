@@ -1,17 +1,55 @@
 <html>
 <head>
 <style>
+@keyframes scaleAnimation {
+    from {
+        transform: scale(0.2); 
+    }
+    to {
+        transform: scale(1);    
+    }
+}
+.scale-image {
+    animation: scaleAnimation 3s forwards;  
+ position: absolute;
+    top: 330px;          
+    left: 800px;   
+width: 300px;
+}
 .element {
-    width: 100vw;       /* Full viewport width */
-    height: 100vh;      /* Full viewport height */
+    width: 100vw;       
+    height: 100vh;      
     background-image: url('bg3blue.png');
     background-repeat: repeat-x;
     animation: moveRight .8s linear infinite;
 }
+.logo{
+ position: absolute;
+    top: 50px;          
+    left: 675px;   
+width: 600px;
+}
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+
+
+
+
 </style>
+<audio autoplay>
+    <source src="Poksound.mp3" type="audio/mpeg">
+</audio>
 </head>
 
 <body class="element">
+
+<img class="scale-image" src="squirt.png" alt="Scaling Image">
+
+<img class="logo" src="logo.png" alt="Scaling Image">
 </body>
 
 
