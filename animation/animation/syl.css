@@ -29,7 +29,7 @@ width: 70px;}
 
 
 .hover-effectr {
-    /* Setting initial styles */
+    /* Setting the red hover effect of the shadow  */
     display: block;
 	  border-radius: 50%; /* Ensures the image is treated as a block-level element */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow properties */
@@ -43,7 +43,7 @@ width: 70px;}
     box-shadow: 0px 10px 15px rgba(255, 0, 0, 0.3); /* Add shadow beneath the image */
 }
 .hover-effectb {
-    /* Setting initial styles */
+    /* Setting the blue hover effect of the shadow  */
     display: block;
 	  border-radius: 50%; /* Ensures the image is treated as a block-level element */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow properties */
@@ -57,7 +57,7 @@ width: 70px;}
     box-shadow: 0px 10px 15px rgba(0, 255, 0, 0.3); /* Add shadow beneath the image */
 }
 .hover-effectg {
-    /* Setting initial styles */
+    /* Setting the green hover effect of the shadow  */
     display: block;
 	  border-radius: 50%; /* Ensures the image is treated as a block-level element */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow properties */
