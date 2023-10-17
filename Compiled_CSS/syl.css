@@ -6,7 +6,7 @@
     background-size: cover; 
    
 }
-body {/*Prevents the infinite scroll  */
+body {/* Keeps the background flush with window */
     margin: 0; 
     padding: 0; 
     overflow: hidden;
