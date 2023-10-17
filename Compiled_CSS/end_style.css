@@ -1,4 +1,4 @@
-﻿@keyframes scaleAnimation {
+﻿@keyframes scaleAnimation {/*    Enlarges the image from small to large */
     from {
         transform: scale(0.2);
     }
@@ -15,7 +15,7 @@
     left: 800px;
     width: 300px;
 }
-
+/* . element sets the bacground for each of the three pokemon    */
 .elementgreen {
     width: 100vw;
     height: 100vh;
@@ -40,7 +40,7 @@
     animation: moveRight .8s linear infinite;
 }
 
-.logo {
+.logo {/* Setting the logo    */
     position: absolute;
     top: 50px;
     left: 675px;
@@ -48,9 +48,9 @@
 }
 
 body {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    overflow: hidden; /* Prevent scrollbars */
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
 }
 
 @keyframes typewriter {
@@ -73,7 +73,7 @@ body {
     }
 }
 
-.textbox {
+.textbox {/* formating for the dialog div box   */
     background-image: url('Dialog.png');
     position: absolute;
     top: 40%;
@@ -84,7 +84,7 @@ body {
     background-size: cover;
 }
 
-.txt {
+.txt {/* Styling for the text within the text box  */
     padding-left: 30px;
     padding-right: 20px;
     overflow-wrap: break-word;
