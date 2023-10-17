@@ -1,0 +1,86 @@
+<html>
+<head>
+<link rel="stylesheet" href="syl.css">
+<style>
+@keyframes bounceAnimation {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  animation: bounceAnimation 2s infinite;
+ position: absolute;
+    top: 330px;          
+    left: 400px;   
+width: 300px;
+}
+@keyframes bounce {
+    0% {
+        transform: translateX(70vw) translateY(0); /* Starts from the right */
+    }
+    20% {
+        transform: translateX(50vw) translateY(-80px);
+    }
+    40% {
+        transform: translateX(30vw) translateY(0);
+    }
+    60% {
+        transform: translateX(20vw) translateY(-80px);
+    }
+    80% {
+        transform: translateX(0vw) translateY(-50px);
+    }
+   
+}
+@keyframes moveRight {
+    from {
+        background-position: 0% 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.element {
+    width: 100vw;       /* Full viewport width */
+    height: 100vh;      /* Full viewport height */
+    background-image: url('bg2blue.png');
+    background-repeat: repeat-x;
+    animation: moveRight .8s linear infinite;
+}
+
+.bounce1 {
+    display: inline-block;  
+    animation: bounce 5s 1; /* Adjust duration as needed */
+    vertical-align: bottom; 
+    position: absolute; /* To position the image within the element */
+    right:900px;          /* Starts from the right edge */
+    bottom: 100px;         /* Stays at the bottom */
+}
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow: hidden; /* Prevent scrollbars */
+}
+</style>
+</head>
+
+<body>
+<audio autoplay>
+    <source src="Poksound.mp3" type="audio/mpeg">
+    
+</audio>
+
+<div class="element">
+<img class="bounce" src="pointer.png" alt="Bouncing Image">
+ <a href="pro2.html"><img src="unnamed.png" class="bounce1" alt="Bouncing Image"></a>
+</div>
+</body>
+</html>
