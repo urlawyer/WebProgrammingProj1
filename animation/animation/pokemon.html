@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+@keyframes bounce {
+    0% {
+        transform: translateX(70vw) translateY(0); /* Starts from the right */
+    }
+    20% {
+        transform: translateX(50vw) translateY(-80px);
+    }
+    40% {
+        transform: translateX(30vw) translateY(0);
+    }
+    60% {
+        transform: translateX(20vw) translateY(-80px);
+    }
+    80% {
+        transform: translateX(0vw) translateY(-50px);
+    }
+   
+}
+@keyframes moveRight {
+    from {
+        background-position: 0% 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.element {
+    width: 100vw;       /* Full viewport width */
+    height: 100vh;      /* Full viewport height */
+    background-image: url('bg2blue.png');
+    background-repeat: repeat-x;
+    animation: moveRight .8s linear infinite;
+}
+
+.bounce {
+    display: inline-block;  
+    animation: bounce 5s 1 forwards; /* Animation completes and final frame persists */
+    vertical-align: bottom; 
+    position: absolute;
+    right: 900px;
+    bottom: 100px;
+}
+
+#redirect:target::before {
+    content: url(pro2.html); /* Replace 'redirect_page.html' with your desired redirection page */
+    display: none;  /* The content isn't actually shown, we're just using it to attempt the "redirect" */
+}
+
+body:after {
+    content: "";
+    display: block;
+    animation: activateLink 5.1s forwards; /* Slightly after the bounce animation */
+}
+
+@keyframes activateLink {
+    to {
+        content: url(#redirect);
+    }
+}
+</style>
+</head>
+
+<body>
+<audio autoplay>
+    <source src="Poksound.mp3" type="audio/mpeg">
+</audio>
+
+<div class="element">
+    <img src="unnamed.png" class="bounce" alt="Bouncing Image">
+</div>
+
+<a href="#redirect" id="redirect"></a> <!-- Invisible anchor to be "activated" after animation -->
+</body>
+</html>
