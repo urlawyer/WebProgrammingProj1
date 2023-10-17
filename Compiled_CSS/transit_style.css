@@ -53,24 +53,24 @@
 }
 
 .elementblue {
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
+    width: 100vw;
+    height: 100vh;
     background-image: url('bg2blue.png');
     background-repeat: repeat-x;
     animation: moveRight .8s linear infinite;
 }
 
 .elementred {
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
+    width: 100vw;
+    height: 100vh;
     background-image: url('bg2red.png');
     background-repeat: repeat-x;
     animation: moveRight .8s linear infinite;
 }
 
 .elementgreen {
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
+    width: 100vw;
+    height: 100vh;
     background-image: url('bg2green.png');
     background-repeat: repeat-x;
     animation: moveRight .8s linear infinite;
@@ -78,17 +78,17 @@
 
 .bounce1 {
     display: inline-block;
-    animation: bounce 5s 1; /* Adjust duration as needed */
+    animation: bounce 5s 1;
     vertical-align: bottom;
-    position: absolute; /* To position the image within the element */
-    right: 900px; /* Starts from the right edge */
-    bottom: 100px; /* Stays at the bottom */
+    position: absolute;
+    right: 900px;
+    bottom: 100px;
 }
 
 body {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    overflow: hidden; /* Prevent scrollbars */
+    margin: 0; 
+    padding: 0;
+    overflow: hidden;
 }
 
 .hover-effectb {
@@ -107,33 +107,29 @@ body {
     }
 
 .hover-effectg {
-    /* Setting hover effect of the shadow  */
     display: block;
-    border-radius: 50%; /* Ensures the image is treated as a block-level element */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow properties */
-    transform: translateY(0); /* Initial position */
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); /* No shadow initially */
+    border-radius: 50%; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
     .hover-effectg:hover {
-        /* Styles when the image is hovered over */
-        transform: translateY(-10px); /* Move the image up by 10 pixels */
-        box-shadow: 0px 10px 15px rgba(0, 255, 0, 0.3); /* Add shadow beneath the image */
+        transform: translateY(-10px);
+        box-shadow: 0px 10px 15px rgba(0, 255, 0, 0.3);
     }
 
 .hover-effectr {
-    /* Setting hover effect of the shadow  */
     display: block;
-    border-radius: 50%; /* Ensures the image is treated as a block-level element */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow properties */
-    transform: translateY(0); /* Initial position */
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); /* No shadow initially */
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
     .hover-effectr:hover {
-        /* Styles when the image is hovered over */
-        transform: translateY(-10px); /* Move the image up by 10 pixels */
-        box-shadow: 0px 10px 15px rgba(255, 0, 0, 0.3); /* Add shadow beneath the image */
+        transform: translateY(-10px);
+        box-shadow: 0px 10px 15px rgba(255, 0, 0, 0.3);
     }
 
 
@@ -172,10 +168,10 @@ body {
     padding-left: 30px;
     padding-right: 20px;
     overflow-wrap: break-word;
-    font-family: monospace; /* for the typewriter aesthetic */
+    font-family: monospace;
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid black;
-    width: 14ch; /* adjusting text */
+    width: 14ch;
     animation: typewriter 4s steps(24) 0s 1 normal both, blinkTextCursor 500ms steps(24) infinite;
 }
