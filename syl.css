@@ -1,0 +1,122 @@
+.element {/*Seting location of start screen   */
+    width: 100vw;       
+    height: 100vh;      
+    background-image: url('start.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+   
+}
+body {/* Keeps the background flush with window */
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden;
+}
+/* Setting the location of the pokeballs on the start screen  */
+.pokeball1 {
+position: relative;
+    top:40%;          
+    left: 30%;   
+width: 70px;}
+.pokeball2 {
+position: relative;
+    top:45%;          
+    left: 45%;   
+width: 70px;}
+.pokeball3 {
+position: relative;
+    top:25%;          
+    left: 60%;   
+width: 70px;}
+
+
+.hover-effectr {
+    /* Setting the red hover effect of the shadow  */
+    display: block;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    transform: translateY(0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
+}
+
+.hover-effectr:hover {
+     /* Setting the red hover effect of the shadow  */
+    transform: translateY(-10px); 
+    box-shadow: 0px 10px 15px rgba(255, 0, 0, 0.3); /* Add shadow with the rgb color beneath the image */
+}
+.hover-effectb {
+    /* Setting the blue hover effect of the shadow  */
+    display: block;
+	  border-radius: 50%; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(0); 
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
+}
+
+.hover-effectb:hover {
+    /* Styles when the image is hovered over */
+    transform: translateY(-10px); 
+    box-shadow: 0px 10px 15px rgba(0, 255, 0, 0.3); 
+}
+.hover-effectg {
+    /* Setting the green hover effect of the shadow  */
+    display: block;
+	  border-radius: 50%; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    transform: translateY(0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
+}
+
+.hover-effectg:hover {
+    /* Styles when the image is hovered over */
+    transform: translateY(-10px); 
+    box-shadow: 0px 10px 15px rgba(0, 0, 255, 0.3); 
+}
+.title{
+position: relative;
+    top:5%;          
+    left:30%; 
+    width:500px;
+}
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: transparent;
+    }
+    to {
+        border-right-color: black; 
+    }
+}
+
+.textbox {/* formating for the dialog div box   */
+    background-image: url('Dialog.png');
+    position: absolute;
+    top: 40%;          
+    left: 3%; 
+    width: 325px;
+    height: 70px;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.txt { /* Styling for the text within the text box  */
+    padding-left: 30px;   
+    padding-right: 20px;
+    overflow-wrap: break-word;
+    font-family: monospace; 
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    width: 14ch;
+    animation: 
+        typewriter 4s steps(24) 0s 1 normal both, 
+        blinkTextCursor 500ms steps(24) infinite;
+}
+

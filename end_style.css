@@ -1,0 +1,97 @@
+﻿@keyframes scaleAnimation {/*    Enlarges the image from small to large */
+    from {
+        transform: scale(0.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.scale-image {
+    animation: scaleAnimation 3s forwards;
+    position: absolute;
+    top: 330px;
+    left: 800px;
+    width: 300px;
+}
+/* . element sets the bacground for each of the three pokemon    */
+.elementgreen {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('bg3green.png');
+    background-repeat: repeat-x;
+    animation: moveRight .8s linear infinite;
+}
+
+.elementblue {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('bg3blue.png');
+    background-repeat: repeat-x;
+    animation: moveRight .8s linear infinite;
+}
+
+.elementred {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('bg3red.png');
+    background-repeat: repeat-x;
+    animation: moveRight .8s linear infinite;
+}
+
+.logo {/* Setting the logo    */
+    position: absolute;
+    top: 50px;
+    left: 675px;
+    width: 600px;
+}
+
+body {
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 75%;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: transparent;
+    }
+
+    to {
+        border-right-color: black;
+    }
+}
+
+.textbox {/* formating for the dialog div box   */
+    background-image: url('Dialog.png');
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    width: 325px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.txt {/* Styling for the text within the text box  */
+    padding-left: 30px;
+    padding-right: 20px;
+    overflow-wrap: break-word;
+    font-family: monospace; /* for the typewriter aesthetic */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    width: 14ch; 
+    animation: typewriter 4s steps(24) 0s 1 normal both, blinkTextCursor 500ms steps(24) infinite;
+}
